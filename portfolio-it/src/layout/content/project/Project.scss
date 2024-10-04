@@ -1,0 +1,8 @@
+.project {
+  .project-card {
+    & > * {
+      flex: 1 1 calc(50% - 1.5rem); 
+      min-width: 250px; 
+    }
+  }
+}

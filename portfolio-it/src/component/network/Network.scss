@@ -1,0 +1,26 @@
+.network-card {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #2c98f0;
+  padding: 16px 16px 16px 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    background: #f2f3f7;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .nextwork-link {
+    font-size: 15px;
+    font-family: "Quicksand", Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+    font-style: italic;
+
+    &:hover {
+      text-decoration: underline;
+      color: #2c98f0;
+    }
+  }
+}

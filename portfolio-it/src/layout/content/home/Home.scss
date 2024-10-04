@@ -1,0 +1,41 @@
+.home {
+  position: relative;
+
+  .home-img {
+    position: relative;
+
+    .ant-image {
+      width: 100%;
+    }
+
+    .ant-image-img {
+      width: 100%;
+      height: auto; 
+      border-radius: 0.5rem;
+    }
+  }
+
+  .home-my-name {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+  
+    &-text {
+      color: #2c98f0;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 60px;
+      line-height: 1.3;
+      font-weight: 700;
+      font-style: italic;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+  
+    &-text.visible {
+      opacity: 1;
+    }
+  }
+}

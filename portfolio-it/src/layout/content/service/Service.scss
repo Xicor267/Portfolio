@@ -1,0 +1,10 @@
+.service {
+  .service-card {
+    margin-top: 3rem;
+
+    .innovative-ideas-card {
+      flex-basis: calc(27% - 1rem);
+      max-width: calc((100% / 3) - 1rem);
+    }
+  }
+}

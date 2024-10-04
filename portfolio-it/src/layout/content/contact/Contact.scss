@@ -1,0 +1,8 @@
+.contact-card {
+  padding-bottom: 1.5rem;
+
+  &>* {
+    flex: 1 1 calc(50% - 2rem);
+    min-width: 250px;
+  }
+}

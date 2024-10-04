@@ -1,0 +1,11 @@
+.menu-list {
+  font-weight: 400;
+  text-transform: uppercase;
+  border-inline-end: none !important;
+  
+  .ant-menu-title-content {
+    display: flex;
+    justify-content: center;
+  }
+  
+}

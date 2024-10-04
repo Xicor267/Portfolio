@@ -1,0 +1,18 @@
+.portfolio-avatar {
+  .ant-image-mask {
+    border-radius: 50%;
+  }
+
+  .portfolio-name {
+    padding-top: 1.5rem;
+    font-weight: 700;
+    font-size: 22px;
+    font-family: "Playfair Display", Georgia, serif;
+  }
+
+  .portfolio-job-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #2c98f0;
+  }
+}
