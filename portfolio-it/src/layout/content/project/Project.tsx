@@ -1,16 +1,14 @@
-import { Flex, Table, TableProps } from 'antd'
+import { Flex, Table } from 'antd'
 import { FC, useState } from 'react'
 import shareblog from "../../../assets/images/shareblog.png"
 import tygraph from "../../../assets/images/tygraph.png"
 import { CategoryName } from '../../../component/categoryname/CategoryName'
 import { ProjectCard } from '../../../component/projectcard/ProjectCard'
-import { useLanguage } from '../../../hook/useLanguages'
-import { DataType, getShareBlogData, getShareBlogColumns , getTygraphData, getTygraphColumns } from '../../../mockdata/tableData'
+import { DataType, getShareBlogColumns, getShareBlogData, getTygraphColumns, getTygraphData } from '../../../mockdata/tableData'
 import "./Project.scss"
 
 export const Project: FC = () => {
   const [openModalIndex, setOpenModalIndex] = useState<number | null>(null);
-  const { i18n } = useLanguage()
 
   const getProjectCard = [
     {

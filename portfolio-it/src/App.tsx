@@ -1,4 +1,3 @@
-import { Flex } from 'antd'
 import './App.scss'
 import { Layout } from './layout/Layout'
 import { Language } from './layout/content/language/Language'

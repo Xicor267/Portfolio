@@ -1,5 +1,5 @@
 import { Flex } from 'antd'
-import { FC, useRef } from 'react'
+import { FC } from 'react'
 import "./Content.scss"
 import { About } from './about/About'
 import { Certificate } from './certificate/Certificate'

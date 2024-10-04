@@ -1,7 +1,7 @@
-import React, { FC, ReactNode } from 'react'
 import { Collapse } from 'antd'
-import "./Collapse.scss"
+import { FC, ReactNode } from 'react'
 import { useLanguage } from '../../hook/useLanguages'
+import "./Collapse.scss"
 
 interface ICollapse {
   item: {

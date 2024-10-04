@@ -1,9 +1,9 @@
-import React, { FC } from 'react'
-import "./Certificate.scss"
 import { Flex } from 'antd'
+import { FC } from 'react'
 import { CategoryName } from '../../../component/categoryname/CategoryName'
 import { CollapseCustom } from '../../../component/collapse/Collapse'
 import { useLanguage } from '../../../hook/useLanguages'
+import "./Certificate.scss"
 
 export const Certificate: FC = () => {
   const { i18n } = useLanguage()

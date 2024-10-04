@@ -1,11 +1,11 @@
-import React, { FC } from 'react'
-import "./Contact.scss"
-import { Button, Flex, Form, Input } from 'antd'
-import { CategoryName } from '../../../component/categoryname/CategoryName'
-import { useLanguage } from '../../../hook/useLanguages'
-import { ContactCard } from '../../../component/contactcard/ContactCard'
 import { ContactsOutlined, PhoneOutlined } from '@ant-design/icons'
-import { FaRegMap } from "react-icons/fa6";
+import { Button, Flex, Form, Input } from 'antd'
+import { FC } from 'react'
+import { FaRegMap } from "react-icons/fa6"
+import { CategoryName } from '../../../component/categoryname/CategoryName'
+import { ContactCard } from '../../../component/contactcard/ContactCard'
+import { useLanguage } from '../../../hook/useLanguages'
+import "./Contact.scss"
 
 export const Contact: FC = () => {
   const { i18n } = useLanguage();

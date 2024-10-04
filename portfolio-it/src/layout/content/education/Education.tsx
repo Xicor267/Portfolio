@@ -1,9 +1,9 @@
-import React, { FC } from 'react'
-import "./Education.scss"
 import { Flex } from 'antd'
+import { FC } from 'react'
 import { CategoryName } from '../../../component/categoryname/CategoryName'
 import { CollapseCustom } from '../../../component/collapse/Collapse'
 import { useLanguage } from '../../../hook/useLanguages'
+import "./Education.scss"
 
 export const Education: FC = () => {
   const { i18n } = useLanguage()

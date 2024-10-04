@@ -19,7 +19,7 @@ interface IAvatar {
 
 }
 
-export const Avatar: FC<IAvatar> = (props) => {
+export const Avatar: FC<IAvatar> = () => {
   const [current, setCurrent] = React.useState(0);
   const { i18n } = useLanguage();
 

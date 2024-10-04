@@ -1,5 +1,5 @@
 import { Flex } from 'antd'
-import React, { FC } from 'react'
+import { FC } from 'react'
 import { useLanguage } from '../../../hook/useLanguages'
 import "./Copyright.scss"
 

@@ -1,6 +1,6 @@
+import { Flex, Image, Modal } from 'antd';
 import { FC, ReactNode } from 'react';
 import './ProjectCard.scss';
-import { Flex, Image, Modal, Table } from 'antd';
 
 interface IProjectCard {
   title: string;

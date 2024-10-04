@@ -1,14 +1,14 @@
 import { Col, Row } from 'antd';
 import { FunctionComponent, useRef } from 'react';
 import "./Layout.scss";
-import { Nav } from './nav/Nav';
 import { Content } from './content/Content';
+import { Nav } from './nav/Nav';
 
 interface ILayout {
 
 }
 
-export const Layout: FunctionComponent<ILayout> = (props) => {
+export const Layout: FunctionComponent<ILayout> = () => {
   const homeRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
   const serviceRef = useRef<HTMLDivElement>(null);

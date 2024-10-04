@@ -1,5 +1,3 @@
-import { BulbOutlined } from '@ant-design/icons';
-import { Card } from 'antd';
 import React, { ReactNode } from 'react';
 import { useLanguage } from '../../hook/useLanguages';
 import './ServiceCard.scss';
