@@ -94,5 +94,9 @@
     "portfolio.page.contact.email.validation": "Vui lòng nhập email của bạn!",
     "portfolio.page.contact.email.notvalid": "Email nhập không hợp lệ!",
     "portfolio.page.contact.subject.validation": "Vui lòng nhập chủ đề của bạn!",
-    "portfolio.page.contact.object.validation": "Vui lòng nhập tin nhắn của bạn!"
+    "portfolio.page.contact.object.validation": "Vui lòng nhập tin nhắn của bạn!",
+    "portfolio.page.contact.submit.form": "Gửi",
+    "portfolio.page.contact.submit.send.successful": "Gửi thành công",
+    "portfolio.page.contact.submit.send.failed": "Gửi thất bại",
+    "portfolio.page.contact.submit.send.desc": "Bao gồm nội dung là Tên, Email, Đối tượng, Tin nhắn."
 }

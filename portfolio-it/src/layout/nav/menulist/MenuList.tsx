@@ -23,8 +23,6 @@ export const MenuList: FC<IMenuList> = (props) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  console.log('props.homeRef', props.homeRef)
-
   const onClick: MenuProps['onClick'] = (e) => {
     switch (e.key) {
       case ENav.NavHome:

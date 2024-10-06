@@ -95,5 +95,9 @@
   "portfolio.page.contact.email.validation": "Please input your E-mail!",
   "portfolio.page.contact.email.notvalid": "The input is not valid E-mail!",
   "portfolio.page.contact.subject.validation": "Please input your Subject!",
-  "portfolio.page.contact.object.validation": "Please input your Message!"
+  "portfolio.page.contact.object.validation": "Please input your Message!",
+  "portfolio.page.contact.submit.form": "Submit",
+  "portfolio.page.contact.submit.send.successful": "Send successfully",
+  "portfolio.page.contact.submit.send.failed": "Send failed",
+  "portfolio.page.contact.submit.send.desc": "Includes Name, Email, Subject, Message."
 }
