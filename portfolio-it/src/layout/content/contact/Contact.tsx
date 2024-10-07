@@ -1,7 +1,7 @@
 import { CheckOutlined, CloseOutlined, ContactsOutlined, PhoneOutlined } from '@ant-design/icons'
 import emailjs from '@emailjs/browser'
 import { Button, Flex, Form, Input } from 'antd'
-import { FC } from 'react'
+import { FC, useState } from 'react'
 import { FaRegMap } from "react-icons/fa6"
 import { useDispatch } from 'react-redux'
 import { CategoryName } from '../../../component/categoryname/CategoryName'
@@ -14,6 +14,7 @@ export const Contact: FC = () => {
   const { i18n } = useLanguage();
   const [form] = Form.useForm();
   const dispatch = useDispatch();
+  const [loadingSubmit, setLoadingSubmit] = useState(false);
 
   const formItemLayout = {
     labelCol: {
@@ -54,37 +55,46 @@ export const Contact: FC = () => {
     },
   ]
 
-  const onFinish = () => {
-    const formElement = document.getElementById('contact-form') as HTMLFormElement;
+  const onFinish = (values: any) => {
+    setLoadingSubmit(true);
 
-    if (formElement) {
-      emailjs
-        .sendForm(
-          'service_h706brt',
-          'template_f2q9i5j',
-          formElement,
-          'bkQzHOiUXlXROLIkI'
-        )
-        .then(
-          (result) => {
-            console.log('SUCCESS!', result.text);
-            dispatch(showNotification({
-              message: i18n("portfolio.page.contact.submit.send.successful"),
-              description: i18n("portfolio.page.contact.submit.send.desc"),
-              icon: <CheckOutlined style={{ background: '#52c41a', borderRadius: '50%', color: '#fff' }} />,
-            }));
-          },
-        ).catch((error) => {
-          console.error('FAILED...', error.text);
+    const templateParams = {
+      name: values.name,
+      email: values.email,
+      subject: values.subject,
+      message: values.message
+    };
+
+    console.log('templateParams', templateParams)
+    setLoadingSubmit(true);
+    emailjs
+      .send(
+        'service_h706brt',
+        'template_f2q9i5j',
+        templateParams,
+        'bkQzHOiUXlXROLIkI'
+      )
+      .then(
+        (result) => {
+          console.log('SUCCESS!', result);
+          setLoadingSubmit(false);
           dispatch(showNotification({
-            message: i18n("portfolio.page.contact.submit.send.failed"),
+            message: i18n("portfolio.page.contact.submit.send.successful"),
             description: i18n("portfolio.page.contact.submit.send.desc"),
-            icon: <CloseOutlined style={{ background: '#ff4d4f', borderRadius: '50%', color: '#fff' }} />,
+            icon: <CheckOutlined style={{ background: '#52c41a', borderRadius: '50%', color: '#fff' }} />,
           }));
-        }).finally()
-    } else {
-      console.error('Form element not found!');
-    }
+        },
+      ).catch((error) => {
+        console.error('FAILED...', error.text);
+        dispatch(showNotification({
+          message: i18n("portfolio.page.contact.submit.send.failed"),
+          description: i18n("portfolio.page.contact.submit.send.desc"),
+          icon: <CloseOutlined style={{ background: '#ff4d4f', borderRadius: '50%', color: '#fff' }} />,
+        }));
+      }).finally(() => {
+        setLoadingSubmit(false)
+      }
+      )
   };
 
   return (
@@ -93,7 +103,6 @@ export const Contact: FC = () => {
         name="portfolio.page.contact"
         desc="portfolio.page.contact.name"
       />
-
       <Flex vertical={false} gap={"2rem"} align="center" wrap className="contact-card">
         <Flex vertical gap={"2rem"}>
           {getContactCard.map((item, index) => (
@@ -109,7 +118,7 @@ export const Contact: FC = () => {
             {...formItemLayout}
             id="contact-form"
             form={form}
-            name="register"
+            name="submit"
             onFinish={onFinish}
             style={{ maxWidth: 600 }}
             scrollToFirstError
@@ -168,7 +177,7 @@ export const Contact: FC = () => {
               <Input.TextArea />
             </Form.Item>
             <Form.Item {...tailFormItemLayout}>
-              <Button type="primary" htmlType="submit" onClick={onFinish}>
+              <Button type="primary" htmlType="submit" loading={loadingSubmit}>
                 {i18n("portfolio.page.contact.submit.form")}
               </Button>
             </Form.Item>

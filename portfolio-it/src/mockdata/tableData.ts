@@ -68,32 +68,32 @@ const getTygraphData = (): DataType[] => {
 
   return [
     {
-      key: "1",
+      key: "ty01",
       customer: i18n("portfolio.page.project.customer.desc"),
       tenant: i18n("portfolio.page.project.description.tygraph"),
     },
     {
-      key: "2",
+      key: "ty02",
       customer: i18n("portfolio.page.project.team_size"),
       tenant: i18n("portfolio.page.project.team_size.tygraph"),
     },
     {
-      key: "3",
+      key: "ty03",
       customer: i18n("portfolio.page.project.position"),
       tenant: i18n("portfolio.page.project.position.tygraph"),
     },
     {
-      key: "4",
+      key: "ty04",
       customer: i18n("portfolio.page.project.responsibilities"),
       tenant: i18n("portfolio.page.project.responsibilities.tygraph"),
     },
     {
-      key: "5",
+      key: "ty05",
       customer: i18n("portfolio.page.project.technologies"),
       tenant: i18n("portfolio.page.project.technologies.tygraph"),
     },
     {
-      key: "6",
+      key: "ty06",
       customer: i18n("portfolio.page.project.link_reference"),
       tenant: i18n("portfolio.page.project.link_reference.tygraph"),
     },

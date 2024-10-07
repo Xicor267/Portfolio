@@ -23,6 +23,7 @@ export const ProjectCard: FC<IProjectCard> = (props) => {
         </div>
       </Flex>
       <Modal
+        style={{ marginTop: "3rem" }}
         title={props.title}
         centered
         open={props.isOpen}

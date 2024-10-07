@@ -12,12 +12,12 @@ export const Project: FC = () => {
 
   const getProjectCard = [
     {
-      imageUrl: tygraph,
+      imageUrl: shareblog,
       title: "Share Blog Website ~ 03/2022 - 05/2022",
       content: <Table<DataType> columns={getShareBlogColumns()} dataSource={getShareBlogData()} />
     },
     {
-      imageUrl: shareblog,
+      imageUrl: tygraph,
       title: "TyGraph Product ~ 09/2022 - Present",
       content: <Table<DataType> columns={getTygraphColumns()} dataSource={getTygraphData()} />
     },
