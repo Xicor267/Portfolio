@@ -60,6 +60,9 @@
     color: #000;
     margin-bottom: 8px;
     margin-top: 40px;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
   }
 
   .card-description {

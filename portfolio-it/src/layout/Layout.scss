@@ -1,2 +1,40 @@
 .layout {
+  position: relative;
+}
+
+.nav-col {
+  display: block;
+
+  @media (max-width: 959px) {
+    display: none; 
+    width: 100%;
+
+    &.visible {
+      display: block;
+      position: absolute;
+      top: 1.5rem;
+      left: 0;
+      height: 100vh;
+      width: 80%;
+      background-color: white;
+      z-index: 1000;
+      transition: transform 0.3s ease;
+    }
+
+    &.hidden {
+      display: none;
+    }
+  }
+}
+
+.menu-button {
+  display: block;
+  position: fixed;
+  top: 10px;
+  left: 4rem;
+  z-index: 2000;
+
+  @media (min-width: 959px) {
+    display: none; 
+  }
 }

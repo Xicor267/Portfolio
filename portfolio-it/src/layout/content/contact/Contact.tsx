@@ -94,7 +94,7 @@ export const Contact: FC = () => {
         desc="portfolio.page.contact.name"
       />
 
-      <Flex vertical={false} gap={"2rem"} align="center" className="contact-card">
+      <Flex vertical={false} gap={"2rem"} align="center" wrap className="contact-card">
         <Flex vertical gap={"2rem"}>
           {getContactCard.map((item, index) => (
             <ContactCard

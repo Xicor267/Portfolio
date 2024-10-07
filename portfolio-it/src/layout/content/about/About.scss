@@ -7,3 +7,13 @@
     letter-spacing: 1px;
   }
 }
+
+@media (max-width: 565px) {
+  .about {
+    .about-netword-card {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}

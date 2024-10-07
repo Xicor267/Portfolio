@@ -10,7 +10,7 @@
 
     .ant-image-img {
       width: 100%;
-      height: auto; 
+      height: auto;
       border-radius: 0.5rem;
     }
   }
@@ -22,7 +22,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
-  
+
     &-text {
       color: #2c98f0;
       font-family: "Playfair Display", Georgia, serif;
@@ -33,9 +33,37 @@
       opacity: 0;
       transition: opacity 0.5s ease-in-out;
     }
-  
+
     &-text.visible {
       opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding-top: 1.5rem;
+
+    .home-my-name {
+      top: 20%;
+
+      &-text {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .home {
+    padding-top: 1.5rem;
+
+    .home-my-name {
+      top: 20%;
+
+      &-text {
+        font-size: 20px;
+      }
     }
   }
 }

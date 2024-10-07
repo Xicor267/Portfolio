@@ -11,8 +11,12 @@
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     }
   }
+
   .contact-card-content {
     font-size: 15px;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
 
     &:hover {
       color: #2c98f0;
