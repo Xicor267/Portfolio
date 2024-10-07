@@ -24,7 +24,7 @@ export const Layout: FunctionComponent<ILayout> = () => {
   const contactRef = useRef<HTMLDivElement>(null);
 
   const dispatch = useDispatch();
-  const { message, description, visible } = useSelector((state: RootState) => state.notification);
+  const { message, description, icon, visible } = useSelector((state: RootState) => state.notification);
   const [api, contextHolder] = notification.useNotification();
 
   useEffect(() => {
@@ -32,7 +32,8 @@ export const Layout: FunctionComponent<ILayout> = () => {
       api.open({
         message,
         description,
-        icon: <CheckOutlined style={{ background: '#52c41a', borderRadius: '50%', color: '#fff' }} />,
+        icon,
+        showProgress: true,
         onClose: () => dispatch(hideNotification()),
       });
     }
