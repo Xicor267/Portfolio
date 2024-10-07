@@ -1,4 +1,3 @@
-import { CheckOutlined } from '@ant-design/icons';
 import { Col, Row, notification } from 'antd';
 import { FunctionComponent, useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
