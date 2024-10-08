@@ -98,5 +98,6 @@
     "portfolio.page.contact.submit.form": "Gửi",
     "portfolio.page.contact.submit.send.successful": "Gửi thành công",
     "portfolio.page.contact.submit.send.failed": "Gửi thất bại",
-    "portfolio.page.contact.submit.send.desc": "Bao gồm nội dung là Tên, Email, Đối tượng, Tin nhắn."
+    "portfolio.page.contact.submit.send.desc": "Bao gồm nội dung là Tên, Email, Đối tượng, Tin nhắn.",
+    "portfolio.page.contact.submit.send.hint": "*Gửi thông tin qua form này để liên hệ trực tiếp với tôi."
 }

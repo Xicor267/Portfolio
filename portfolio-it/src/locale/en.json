@@ -99,5 +99,6 @@
   "portfolio.page.contact.submit.form": "Submit",
   "portfolio.page.contact.submit.send.successful": "Send successfully",
   "portfolio.page.contact.submit.send.failed": "Send failed",
-  "portfolio.page.contact.submit.send.desc": "Includes Name, Email, Subject, Message."
+  "portfolio.page.contact.submit.send.desc": "Includes Name, Email, Subject, Message.",
+  "portfolio.page.contact.submit.send.hint": "*Submit this form to contact me directly."
 } 

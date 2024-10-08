@@ -114,6 +114,9 @@ export const Contact: FC = () => {
           ))}
         </Flex>
         <Flex vertical gap={"2rem"}>
+          <Flex justify='center'>
+            <div style={{fontStyle: "italic", color: "#FA5F5F", fontSize: 15}}>{i18n("portfolio.page.contact.submit.send.hint")}</div>
+          </Flex>
           <Form
             {...formItemLayout}
             id="contact-form"
