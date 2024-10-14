@@ -10,6 +10,7 @@ import { Home } from './home/Home'
 import { Project } from './project/Project'
 import { Service } from './service/Service'
 import { Skill } from './skill/Skill'
+import { PageView } from './pageview/PageView'
 
 interface IContent {
   homeRef: React.RefObject<HTMLDivElement>;
@@ -52,6 +53,9 @@ export const Content: FC<IContent> = (props) => {
       </div>
       <div ref={props.contactRef}>
         <Contact />
+      </div>
+      <div>
+        <PageView />
       </div>
     </Flex>
   );
