@@ -11,7 +11,8 @@ import {
 } from '@ant-design/icons';
 import { Flex, Image, Space } from 'antd';
 import React, { FC } from 'react';
-import personalImage from "../../../assets/images/avatar-nam-nguyen.jpg";
+// import personalImage from "../../../assets/images/avatar-nam-nguyen.jpg";
+import personalImage2 from "../../../assets/images/avatar2.jpg";
 import { useLanguage } from '../../../hook/useLanguages';
 import "./Avatar.scss";
 
@@ -24,7 +25,8 @@ export const Avatar: FC<IAvatar> = () => {
   const { i18n } = useLanguage();
 
   const imageList = [
-    personalImage,
+    // personalImage,
+    personalImage2
   ]
 
   const onDownload = () => {
@@ -85,7 +87,7 @@ export const Avatar: FC<IAvatar> = () => {
         }}
       >
         {imageList.map((item) => (
-          <Image key={item} src={item} width={200} style={{borderRadius: "50%", border: "2px solid #2c98f0"}}/>
+          <Image key={item} src={item} width={"100%"} height={'100%'} style={{ borderRadius: "50%", border: "1px solid #d9d9d9" }} />
         ))}
       </Image.PreviewGroup>
       <div className="portfolio-name">

@@ -1,6 +1,6 @@
 import { Flex, Image, Typography } from 'antd';
 import { FC, useEffect } from 'react';
-import background from "../../../assets/images/background.jpg";
+import background2 from "../../../assets/images/background2.jpg";
 import { useLanguage } from '../../../hook/useLanguages';
 import "./Home.scss";
 
@@ -23,7 +23,7 @@ export const Home: FC = () => {
       <div className="home-img">
         <Image
           className="home-img-detail"
-          src={background}
+          src={background2}
           alt=""
           style={{ width: "100%", borderRadius: "0.5rem" }}
         />
