@@ -12,7 +12,7 @@ import {
 import { Flex, Image, Space } from 'antd';
 import React, { FC } from 'react';
 // import personalImage from "../../../assets/images/avatar-nam-nguyen.jpg";
-import personalImage2 from "../../../assets/images/avatar2.jpg";
+import personalImage3 from "../../../assets/images/avatar3.jpg";
 import { useLanguage } from '../../../hook/useLanguages';
 import "./Avatar.scss";
 
@@ -26,7 +26,7 @@ export const Avatar: FC<IAvatar> = () => {
 
   const imageList = [
     // personalImage,
-    personalImage2
+    personalImage3
   ]
 
   const onDownload = () => {
