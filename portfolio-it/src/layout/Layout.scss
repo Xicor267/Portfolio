@@ -27,6 +27,17 @@
   }
 }
 
+body.nav-open {
+  overflow: hidden;
+}
+
+@media (min-width: 960px) {
+  .nav-col.visible {
+    position: sticky;
+    height: calc(100vh - 6rem);
+  }
+}
+
 .menu-button {
   display: block;
   position: fixed;

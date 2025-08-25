@@ -1,7 +1,7 @@
 import { Flex, Table } from 'antd'
 import { FC, useState } from 'react'
 import shareblog from "../../../assets/images/shareblog.png"
-import tygraph from "../../../assets/images/tygraph.png"
+import tygraph from "../../../assets/images/product.png"
 import { CategoryName } from '../../../component/categoryname/CategoryName'
 import { ProjectCard } from '../../../component/projectcard/ProjectCard'
 import { DataType, getShareBlogColumns, getShareBlogData, getTygraphColumns, getTygraphData } from '../../../mockdata/tableData'

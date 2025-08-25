@@ -101,5 +101,9 @@
   "portfolio.page.contact.submit.send.failed": "Send failed",
   "portfolio.page.contact.submit.send.desc": "Includes Name, Email, Subject, Message.",
   "portfolio.page.contact.submit.send.hint": "*Submit this form to contact me directly.",
-  "portfolio.page.page.view.user.visits": "User Visits"
+  "portfolio.page.page.view.user.visits": "User Visits",
+  "portfolio.page.card.skill.dotnet.name": "C# .NET",
+  "portfolio.page.card.skill.sql.name": "MSSQL",
+  "portfolio.page.card.skill.mongodb.name": "MongoDB",
+  "portfolio.page.card.skill.api.name": "REST API"
 } 

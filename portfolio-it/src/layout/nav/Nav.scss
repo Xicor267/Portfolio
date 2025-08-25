@@ -3,4 +3,37 @@
   height: calc(100vh - 6rem);
   background: #f2f3f7;
   border-radius: 8px;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+  &:hover {
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #2c98f0;
+    border-radius: 6px;
+    border: 3px solid transparent;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #00CCFF;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 959px) {
+  .nav {
+    overflow-y: auto;
+    height: calc(100vh - 30rem);
+  }
 }

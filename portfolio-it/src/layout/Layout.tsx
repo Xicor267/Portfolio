@@ -28,6 +28,7 @@ export const Layout: FunctionComponent<ILayout> = () => {
   const [api, contextHolder] = notification.useNotification();
   const [isNavVisible, setIsNavVisible] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   useEffect(() => {
     if (visible) {
@@ -48,11 +49,13 @@ export const Layout: FunctionComponent<ILayout> = () => {
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
-
+      
       if (window.innerWidth > 956) {
         setIsNavVisible(true);
+        setIsNavOpen(true);
       } else {
         setIsNavVisible(false);
+        setIsNavOpen(false);
       }
     };
 
@@ -66,49 +69,51 @@ export const Layout: FunctionComponent<ILayout> = () => {
   return (
     <>
       {contextHolder}
-      {windowWidth <= 956 && (
-        <Button
-          className="menu-button"
-          type="primary"
-          onClick={toggleNav}
-        >
-          <LuMenuSquare style={{fontSize: 20}}/>
-        </Button>
-      )}
-      <Row className="layout">
-        <Col
-          xs={24}
-          sm={24}
-          md={6}
-          lg={6}
-          className={`nav-col ${isNavVisible ? "visible" : "hidden"}`}
-        >
-          <Nav
-            homeRef={homeRef}
-            aboutRef={aboutRef}
-            serviceRef={serviceRef}
-            skillRef={skillRef}
-            educationRef={educationRef}
-            certificateRef={certificateRef}
-            experienceRef={experienceRef}
-            projectRef={projectRef}
-            contactRef={contactRef}
-          />
-        </Col>
-        <Col xs={24} sm={24} md={18} lg={18}>
-          <Content
-            homeRef={homeRef}
-            aboutRef={aboutRef}
-            serviceRef={serviceRef}
-            skillRef={skillRef}
-            educationRef={educationRef}
-            certificateRef={certificateRef}
-            experienceRef={experienceRef}
-            projectRef={projectRef}
-            contactRef={contactRef}
-          />
-        </Col>
-      </Row>
+      <body className={isNavOpen ? "nav-open" : ""}>
+        {windowWidth <= 956 && (
+          <Button
+            className="menu-button"
+            type="primary"
+            onClick={toggleNav}
+          >
+            <LuMenuSquare style={{ fontSize: 20 }} />
+          </Button>
+        )}
+        <Row className="layout">
+          <Col
+            xs={24}
+            sm={24}
+            md={6}
+            lg={6}
+            className={`nav-col ${isNavVisible || isNavOpen ? "visible" : "hidden"}`}
+          >
+            <Nav
+              homeRef={homeRef}
+              aboutRef={aboutRef}
+              serviceRef={serviceRef}
+              skillRef={skillRef}
+              educationRef={educationRef}
+              certificateRef={certificateRef}
+              experienceRef={experienceRef}
+              projectRef={projectRef}
+              contactRef={contactRef}
+            />
+          </Col>
+          <Col xs={24} sm={24} md={18} lg={18}>
+            <Content
+              homeRef={homeRef}
+              aboutRef={aboutRef}
+              serviceRef={serviceRef}
+              skillRef={skillRef}
+              educationRef={educationRef}
+              certificateRef={certificateRef}
+              experienceRef={experienceRef}
+              projectRef={projectRef}
+              contactRef={contactRef}
+            />
+          </Col>
+        </Row>
+      </body>
     </>
   );
 }

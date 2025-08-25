@@ -100,5 +100,9 @@
     "portfolio.page.contact.submit.send.failed": "Gửi thất bại",
     "portfolio.page.contact.submit.send.desc": "Bao gồm nội dung là Tên, Email, Đối tượng, Tin nhắn.",
     "portfolio.page.contact.submit.send.hint": "*Gửi thông tin qua form này để liên hệ trực tiếp với tôi.",
-    "portfolio.page.page.view.user.visits": "Lượt truy cập của người dùng"
+    "portfolio.page.page.view.user.visits": "Lượt truy cập của người dùng",
+    "portfolio.page.card.skill.dotnet.name": "C# .NET",
+    "portfolio.page.card.skill.sql.name": "MSSQL",
+    "portfolio.page.card.skill.mongodb.name": "MongoDB",
+    "portfolio.page.card.skill.api.name": "REST API"
 }

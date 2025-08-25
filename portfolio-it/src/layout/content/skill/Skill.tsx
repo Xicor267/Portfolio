@@ -6,6 +6,10 @@ import react from "../../../assets/images/react.png";
 import scss from "../../../assets/images/sass.png";
 import git from "../../../assets/images/social.png";
 import ts from "../../../assets/images/typescript.png";
+import dotnet from "../../../assets/images/dotnet.png";
+import mongodb from "../../../assets/images/mongodb.png";
+import sql from "../../../assets/images/sql.png";
+import api from "../../../assets/images/api.png";
 import { CategoryName } from '../../../component/categoryname/CategoryName';
 import { SkillCard } from '../../../component/skillcard/SkillCard';
 import "./Skill.scss";
@@ -35,6 +39,22 @@ export const Skill: FC = () => {
     {
       icon: <img src={git} style={{ width: 40, height: 40 }} alt='' />,
       name: "portfolio.page.card.skill.git.name",
+    },
+    {
+      icon: <img src={dotnet} style={{ width: 40, height: 40 }} alt='' />,
+      name: "portfolio.page.card.skill.dotnet.name",
+    },
+    {
+      icon: <img src={sql} style={{ width: 40, height: 40 }} alt='' />,
+      name: "portfolio.page.card.skill.sql.name",
+    },
+    {
+      icon: <img src={mongodb} style={{ width: 40, height: 40 }} alt='' />,
+      name: "portfolio.page.card.skill.mongodb.name",
+    },
+    {
+      icon: <img src={api} style={{ width: 40, height: 40 }} alt='' />,
+      name: "portfolio.page.card.skill.api.name",
     },
   ]
 
