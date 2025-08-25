@@ -104,5 +104,6 @@
     "portfolio.page.card.skill.dotnet.name": "C# .NET",
     "portfolio.page.card.skill.sql.name": "MSSQL",
     "portfolio.page.card.skill.mongodb.name": "MongoDB",
-    "portfolio.page.card.skill.api.name": "REST API"
+    "portfolio.page.card.skill.api.name": "REST API",
+    "portfolio.page.download.my.cv": "Tải CV của tôi"
 }

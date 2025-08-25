@@ -4,4 +4,13 @@
   gap: 0.5rem;
   padding: 0 4rem;
   margin: 0px;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 1.5rem;
+  }
 }
