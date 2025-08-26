@@ -1,4 +1,5 @@
 .app {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -6,9 +7,10 @@
   margin: 0px;
 
   .header {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
+    gap: 0.5rem;
     align-items: center;
     justify-content: flex-end;
     padding: 0 1.5rem;
