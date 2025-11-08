@@ -31,6 +31,17 @@ export const Education: FC = () => {
           </p>
         </div>
       )
+    },
+    {
+      key: "cert1",
+      label: i18n("portfolio.page.certification.b1.label"),
+      children: (
+        <div>
+          <h4>{i18n("portfolio.page.certification.b1.title")}</h4>
+          <p><strong>{i18n("portfolio.page.certification.b1.level")}:</strong> {i18n("portfolio.page.certification.b1.description")}</p>
+          <p>{i18n("portfolio.page.certification.b1.details")}</p>
+        </div>
+      )
     }
   ]
 

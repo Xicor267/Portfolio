@@ -42,9 +42,9 @@ export const Content: FC<IContent> = (props) => {
       <div ref={props.educationRef}>
         <Education />
       </div>
-      <div ref={props.certificateRef}>
+      {/* <div ref={props.certificateRef}>
         <Certificate />
-      </div>
+      </div> */}
       <div ref={props.experienceRef}>
         <Experience />
       </div>

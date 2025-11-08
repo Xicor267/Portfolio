@@ -33,11 +33,11 @@ export const getContextMenuNavItems = (): MenuItem[] => {
       label: i18n("portfolio.page.education"),
       // icon: <SettingOutlined />,
     },
-    {
-      key: ENav.NavCertificate,
-      label: i18n("portfolio.page.certification"),
-      // icon: <SettingOutlined />,
-    },
+    // {
+    //   key: ENav.NavCertificate,
+    //   label: i18n("portfolio.page.certification"),
+    //   // icon: <SettingOutlined />,
+    // },
     {
       key: ENav.NavExperience,
       label: i18n("portfolio.page.experience"),

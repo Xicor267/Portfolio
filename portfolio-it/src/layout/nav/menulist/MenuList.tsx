@@ -40,9 +40,9 @@ export const MenuList: FC<IMenuList> = (props) => {
       case ENav.NavEducation:
         handleScroll(props.educationRef);
         break;
-      case ENav.NavCertificate:
-        handleScroll(props.certificateRef);
-        break;
+      // case ENav.NavCertificate:
+      //   handleScroll(props.certificateRef);
+      //   break;
       case ENav.NavExperience:
         handleScroll(props.experienceRef);
         break;
