@@ -2,15 +2,14 @@ import { Flex } from 'antd'
 import { FC } from 'react'
 import "./Content.scss"
 import { About } from './about/About'
-import { Certificate } from './certificate/Certificate'
 import { Contact } from './contact/Contact'
 import { Education } from './education/Education'
 import { Experience } from './experience/Experience'
 import { Home } from './home/Home'
+import { PageView } from './pageview/PageView'
 import { Project } from './project/Project'
 import { Service } from './service/Service'
 import { Skill } from './skill/Skill'
-import { PageView } from './pageview/PageView'
 
 interface IContent {
   homeRef: React.RefObject<HTMLDivElement>;
