@@ -1,4 +1,4 @@
-import { CodeOutlined, LaptopOutlined, ShopOutlined } from '@ant-design/icons'
+import { CodeOutlined, LaptopOutlined } from '@ant-design/icons'
 import { Flex, Timeline } from 'antd'
 import { FC } from 'react'
 import { CategoryName } from '../../../component/categoryname/CategoryName'

@@ -21,7 +21,7 @@ export const DownloadCVButton: FC = () => {
       type="primary"
       icon={<DownloadOutlined />}
       href={cvFilePath}
-      download="NGUYEN-PHUONG-NAM-DEV-CV.pdf"
+      download="NGUYEN-PHUONG-NAM-SOFTWARE-ENGINEER-CV.pdf"
       style={{ marginTop: '0.5rem' }}
     >
       {handleShowBtnSmallScreen()}
