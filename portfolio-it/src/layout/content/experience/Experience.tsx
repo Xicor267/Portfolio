@@ -37,20 +37,20 @@ export const Experience: FC = () => {
         </div>
       )
     },
-    {
-      color: '#f9bf3f',
-      dot: <ShopOutlined  style={{ fontSize: 40 }} />,
-      children: (
-        <div>
-          <h4>{i18n("portfolio.page.experience.grocery.duration")}</h4>
-          <p><strong>{i18n("portfolio.page.experience.grocery.company")}</strong></p>
-          <p><strong>{i18n("portfolio.page.experience.grocery.title")}</strong></p>
-          <p>
-            {i18n("portfolio.page.experience.grocery.description")}
-          </p>
-        </div>
-      )
-    }
+    // {
+    //   color: '#f9bf3f',
+    //   dot: <ShopOutlined  style={{ fontSize: 40 }} />,
+    //   children: (
+    //     <div>
+    //       <h4>{i18n("portfolio.page.experience.grocery.duration")}</h4>
+    //       <p><strong>{i18n("portfolio.page.experience.grocery.company")}</strong></p>
+    //       <p><strong>{i18n("portfolio.page.experience.grocery.title")}</strong></p>
+    //       <p>
+    //         {i18n("portfolio.page.experience.grocery.description")}
+    //       </p>
+    //     </div>
+    //   )
+    // }
   ]
 
   return (

@@ -10,6 +10,7 @@ import dotnet from "../../../assets/images/dotnet.png";
 import mongodb from "../../../assets/images/mongodb.png";
 import sql from "../../../assets/images/sql.png";
 import api from "../../../assets/images/api.png";
+import efcore from "../../../assets/images/efcore.png";
 import { CategoryName } from '../../../component/categoryname/CategoryName';
 import { SkillCard } from '../../../component/skillcard/SkillCard';
 import "./Skill.scss";
@@ -56,6 +57,10 @@ export const Skill: FC = () => {
       icon: <img src={api} style={{ width: 40, height: 40 }} alt='' />,
       name: "portfolio.page.card.skill.api.name",
     },
+    {
+      icon: <img src={efcore} style={{ width: 40, height: 40 }} alt='' />,
+      name: "portfolio.page.card.skill.efcore.name",
+    }
   ]
 
   return (
